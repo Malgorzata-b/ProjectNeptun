@@ -24,11 +24,9 @@ html {
 */
 body {
   height: 100vh;
-  max-width: 1400px;
+  /* max-width: 2000px; */
   display: flex;
   flex-direction: column;
-  /* margin: 0 100px 0 100px; */
-  /* border: 2px solid red; */
   background-color: black;
 }
 
@@ -41,7 +39,7 @@ header {
 
 /* Defines a set of custom CSS variables for colors used throughout the stylesheet */
 /* Definerer et sett med egendefinerte CSS-variabler for farger som brukes gjennom hele stilarket */
-:root {
+/* :root {
   --white: white;
   --black: black;
   --lightcolor: #f2f2f2;
@@ -51,6 +49,19 @@ header {
   --button-background: rgb(156, 156, 171);
   --button-background-image: rgb(52, 52, 72);
   --Neptune-text: rgb(228, 217, 172);
+} */
+
+:root {
+  --white: white;
+  --black: rgba(16, 96, 248, 0.38);
+  --lightcolor: #f2f2f2;
+  --darkpurple: rgb(9, 4, 24);
+  --verydarkpurple: rgb(13, 3, 45);
+  --purple: rgb(39, 36, 49);
+  --button-background: rgb(156, 156, 171);
+  --button-background-image: rgb(52, 52, 72);
+  --Neptune-text: rgb(228, 217, 172);
+  --lightblue: /*rgba(92, 152, 249, 0.25); */ rgba(2, 20, 67, 0.75);
 }
 
 /* background-color: var(--orange); */
@@ -75,8 +86,6 @@ header {
   font-size: 34px;
   font-family: Kalnia;
   color: var(--white);
-  /* position: relative; */
-  padding-left: 1000px;
 }
 
 #Meny {
@@ -116,8 +125,8 @@ header {
 
 .Section-container {
   display: flex;
+  background-color: var(--black);
   height: 100vh;
-  /* margin: 0 100px 0 100px; */
 }
 
 /* Styles the gallery container with flexbox layout, aligns content to the right and center, adds margins, sets height to full viewport height, and applies a black background */
@@ -126,10 +135,8 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 0 100px 0 100px;
-  height: 100vh;
+  gap: 220px;
   background-color: var(--black);
-  /* border: 2px solid rgb(13, 3, 45); */
 }
 
 /* Styles the carousel container with a flexbox layout in a column direction, sets a black background, adds padding, rounded corners, and a shadow effect */
@@ -138,6 +145,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: var(--black);
+  margin: 20px 50px 20px 0px;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 4px 4px 16px var(--verydarkpurple);
@@ -161,9 +169,11 @@ header {
 .button-container {
   display: flex;
   justify-content: center;
-  background-color: var(--darkpurple);
+  background-color: rgba(1, 18, 60, 0);
+  border-radius: 10px;
+  overflow: hidden;
   height: 40px;
-  width: 600px;
+  width: 700px;
 }
 
 /* Styles individual buttons with specific dimensions, margin, rounded corners, shadow effects, and gradient background */
@@ -192,6 +202,122 @@ header {
   background-attachment: fixed;
 }
 
+#Infoside {
+  background-color: var(--lightblue);
+}
+
+#Fakta {
+  background-color: var(--lightblue);
+}
+
+.List-container {
+  display: flex;
+  background-color: var(--black);
+}
+
+#list {
+  color: var(--white);
+}
+
+#Neptune-Fakta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 800px;
+  margin-top: 100px;
+}
+
+#Neptune-bilde {
+  margin: 65px 0px 0px 30px;
+  /* margin-top: 65px;
+  margin-left: 30px; */
+  height: 450px;
+  width: 700px;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 4px 4px 16px var(--verydarkpurple);
+}
+
+#textbox-1 {
+  font-family: Kalnia;
+  color: var(--white);
+}
+
+#textbox-2 {
+  font-size: 14px;
+  font-family: Kalnia;
+  color: var(--white);
+}
+
+#textbox-3 {
+  font-size: 16px;
+  font-family: Kalnia;
+  color: var(--white);
+  text-align: center;
+  padding-left: 750px;
+}
+
+#text-1 {
+  margin: 20px 0px 0px 1200px;
+  font-size: 34px;
+  font-family: Kalnia;
+  color: var(--white);
+  position: absolute;
+}
+
+#text-2 {
+  margin-right: 1000px;
+  margin-top: 20px;
+  padding-left: 80px;
+  font-size: 34px;
+  font-family: Kalnia;
+  color: var(--white);
+  position: absolute;
+}
+
+.Infoside-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 800px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+#Neptune-bilde-1 {
+  margin-left: 50px;
+  margin-top: 70px;
+  height: 350px;
+  width: 700px;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 4px 4px 16px var(--verydarkpurple);
+}
+
+.Atmosfære-text {
+  display: flex;
+  padding-right: 800px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  padding-left: 50px;
+}
+
+#Neptune-bilde-2 {
+  margin-top: 60px;
+  margin-left: 650px;
+  height: 350px;
+  width: 700px;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 4px 4px 16px var(--verydarkpurple);
+}
+/* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 800px;
+  margin-top: 50px;
+  margin-bottom: 200px; */
+
 /* #Infoside {
   background-image: url(Images/Neptune\ 12.jpg);
   background-repeat: no-repeat;
@@ -206,149 +332,4 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-} */
-
-.List-container {
-  display: flex;
-
-  /* padding-left: 50px; */
-}
-#list {
-  color: var(--white);
-}
-#Neptune-Fakta {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-left: 800px;
-  margin-top: 150px;
-}
-#Neptune-bilde {
-  margin-top: 150px;
-  padding-left: 100px;
-  height: 450px;
-  width: 700px;
-  position: absolute;
-}
-#textbox-1 {
-  /* font-size: 20px; */
-  font-family: Kalnia;
-  color: var(--white);
-}
-#textbox-2 {
-  font-size: 14px;
-  font-family: Kalnia;
-  color: var(--white);
-}
-
-#textbox-3 {
-  font-size: 16px;
-  font-family: Kalnia;
-  color: var(--white);
-  text-align: center;
-  padding-left: 750px;
-  /* margin-top: 500px; */
-  /* margin-left: 150px; */
-}
-#text-1 {
-  margin-left: 1200px;
-  margin-top: 20px;
-  font-size: 34px;
-  font-family: Kalnia;
-  color: var(--white);
-  position: absolute;
-}
-#text-2 {
-  margin-right: 1000px;
-  margin-top: 20px;
-  padding-left: 80px;
-  font-size: 34px;
-  font-family: Kalnia;
-  color: var(--white);
-  position: absolute;
-}
-.Infoside-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-left: 800px;
-  margin-top: 100px;
-  margin-bottom: 200px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-left: 800px;
-  margin-top: 50px;
-  margin-bottom: 200px; */
-}
-
-#Neptune-bilde-1 {
-  margin-top: 50px;
-  padding-left: 100px;
-  height: 350px;
-  width: 700px;
-  position: absolute;
-}
-.Atmosfære-text {
-  display: flex;
-  /* flex-direction: column;
-  justify-content: space-around; */
-  padding-right: 800px;
-  margin-top: 100px;
-  margin-bottom: 200px;
-  padding-left: 50px;
-}
-
-#Neptune-bilde-2 {
-  margin-top: 50px;
-  padding-right: 100px;
-  margin-right: 10px;
-  margin-left: 700px;
-  height: 350px;
-  width: 700px;
-  position: absolute;
-}
-/* #Neptune-bilde {
-  margin: auto;
-  height: 200px;
-  width: 200px;
-  position: relative;
-} */
-/* header {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(../images/npt4.jpeg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  min-height: 100px;
-}
-
-ul {
-  float: right;
-  list-style-type: none;
-  margin-top: 30px;
-  min-height: 400px;
-  margin-right: 60px;
-  font-size: 17px;
-}
-
-ul li {
-  display: inline-block;
-}
-
-ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 5px 20px;
-  border: 1px solid transparent;
-  transition: 0.5 ease;
-}
-
-ul li a:hover {
-  background-color: white;
-  color: black;
 } */
