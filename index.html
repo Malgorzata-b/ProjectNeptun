@@ -14,7 +14,17 @@
     <title>Neptune</title>
   </head>
   <body>
+    <!-- The header contains two main sections:
+    1. The first section includes a hero title and navigation to another page.
+    2. The second section includes a menu with navigation to different parts of the same page, such as the photo gallery, information, and short facts.
+-->
+    <!-- Headeren inneholder to hovedseksjoner:
+    1. Den første seksjonen inneholder en hero-tittel og navigasjon til en annen side.
+    2. Den andre seksjonen inneholder en meny med navigasjon til forskjellige deler av samme side, som bildegalleri, informasjon og korte fakta.
+-->
     <header>
+      <!-- First section: Hero title and navigation to another page -->
+      <!-- Første seksjon: Hero-tittel og navigasjon til en annen side -->
       <section class="Section-container" id="fixed-bilde">
         <div id="fixed">
           <nav id="page_title">
@@ -22,10 +32,24 @@
               <h2 id="Link">NASA</h2>
             </a>
           </nav>
+          <div id="Meny">
+            <nav class="Navbar">
+              <a href="#Bildegalleri"> <h3>Bildegalleri</h3></a>
+
+              <a href="#Infoside"> <h3>Infoside</h3></a>
+
+              <a href="#Atmosfære"> <h3>Atmosfære</h3></a>
+
+              <a href="#Fakta"> <h3>Fakta</h3></a>
+            </nav>
+          </div>
         </div>
+
         <div id="Title"><p>Neptune</p></div>
       </section>
-      <section id="Meny">
+      <!-- Second section: Menu with navigation to different parts of the page -->
+      <!-- Andre seksjon: Meny med navigasjon til ulike deler av siden -->
+      <!-- <section id="Meny">
         <nav class="Navbar">
           <a href="#Bildegalleri"> <h3>Bildegalleri</h3></a>
 
@@ -35,38 +59,189 @@
 
           <a href="#Fakta"> <h3>Fakta</h3></a>
         </nav>
-      </section>
+      </section> -->
+      <!-- <nav>
+        <ul>
+          <li><a href="#">Infoside</a></li>
+          <li><a href="#">Bildegalleri</a></li>
+          <li><a href="#">Fakta</a></li>
+        </ul>
+      </nav> -->
     </header>
+    <!-- Four sections:
+    1. A photo gallery.
+    2. A section with basic information and facts.
+    3. A section about the atmosphere.
+    4. A section with short information about Neptune, presented as a list.
+-->
+    <!-- Fire seksjoner:
+    1. Et bildegalleri.
+    2. En seksjon med grunnleggende informasjon og interessante fakta.
+    3. En seksjon om atmosfæren.
+    4. En seksjon med korte opplysninger om Neptun, presentert i listeform.
+-->
 
+    <!-- First section: Photo gallery -->
+    <!-- Første seksjon: Bildegalleri -->
     <section class="Section-container" id="Bildegalleri">
       <h1 id="text">Blidegalleri</h1>
+      <!-- Gallery content here -->
+      <!-- Innhold til bildegalleriet her -->
       <div class="carousel-container">
         <div class="photo-container">
-          <img id="photo-1" src="Images/Neptun-4.jpg" alt="Neptun-4" />
-          <img id="photo-2" src="Images/Neptun-3.jpg" alt="Neptun-3" />
-          <img id="photo-3" src="Images/Neptun-5.jpg" alt="Neptun-5" />
-          <img id="photo-4" src="Images/Neptun-7.jpg" alt="Neptun-7" />
-          <img id="photo-5" src="Images/Neptun-11.jpg" alt="Neptun-11" />
+          <img id="photo-1" src="Images/npt2.jpg" alt="Neptun-2" />
+          <!-- <img id="photo-2" src="Images/npt9.jpg" alt="Neptun-9" /> -->
+          <img id="photo-3" src="Images/npt7.png" alt="Neptun-7" />
+          <!-- <img id="photo-4" src="Images/npt8.png" alt="Neptun-8" /> -->
+          <img id="photo-5" src="Images/Neptune 12.jpg" alt="Neptun-12" />
         </div>
 
         <div class="button-container">
           <a class="button" href="#photo-1"></a>
-          <a class="button" href="#photo-2"></a>
+          <!-- <a class="button" href="#photo-2"></a> -->
           <a class="button" href="#photo-3"></a>
-          <a class="button" href="#photo-4"></a>
+          <!-- <a class="button" href="#photo-4"></a> -->
           <a class="button" href="#photo-5"></a>
           <!-- <a class="button" href="#photo-5"></a> -->
         </div>
       </div>
     </section>
-    <section class="Section-container" id="Infoside"></section>
-    <section class="Section-container" id="Atmosfære"></section>
-    <section class="Section-container" id="Fakta"></section>
-    <section class="Section-container" id="Kortslutt"></section>
+    <!-- Second section: Basic information and facts -->
+    <!-- Andre seksjon: Grunnleggende informasjon og interessante fakta -->
+    <section class="Section-container" id="Infoside">
+      <div>
+        <div><h1 id="text-1">Infoside</h1></div>
+        <img id="Neptune-bilde-1" src="Images/npt22.jpg" alt="Neptune" />
+        <div class="Infoside-text">
+          <p id="textbox-1">
+            Neptune, den åttende og ytterste planeten i solsystemet, ble
+            oppdaget i 1846 av Johann Gottfried Galle og Heinrich d'Arrest.
+            <br />
+            Som en iskjemp er den kjent for sin blå farge, som skyldes metan i
+            atmosfæren, <br />
+            og har de sterkeste vindene av alle planetene. Med 14 måner,
+            inkludert den bemerkelsesverdige Triton,<br />
+            og et svakt ringsystem, tar Neptune 165 jordår å fullføre en bane
+            rundt solen, og har en rotasjonsperiode på omtrent 16 timer. <br />
+            Voyager 2, den eneste romsonden som har besøkt planeten, ga viktig
+            informasjon under sin flyby i 1989.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Third section: Atmosphere -->
+    <!-- Tredje seksjon: Atmosfæren -->
+    <section class="Section-container" id="Atmosfære">
+      <div>
+        <div><h1 id="text-2">Atmosfære</h1></div>
+        <img id="Neptune-bilde-2" src="Images/atm.22.jpg" alt="Neptune" />
+        <div class="Atmosfære-text">
+          <p id="textbox-1">
+            Atmosfærens sammensetning består hovedsakelig av kvælstoff (78%),
+            oksygen (21%), <br />og små mengder argon (0,93%) og karbondioksid
+            (0,04%). I tillegg inneholder <br />
+            atmosfæren spor av edelgasser som neon, helium, krypton, og xenon.
+            Vanndamp, <br />
+            som kan variere mellom 0% og 4%, spiller en viktig rolle i
+            værmønstre og klima, mens metan, <br />
+            i små mengder, fungerer som en kraftig drivhusgass. Denne blandingen
+            av gasser er essensiell for <br />
+            liv og klima på jorden.
+          </p></div>
+        </div>
+      </div>
+    </section>
+    <!-- Fourth section: Short information about Neptune in list form -->
+    <!-- Fjerde seksjon: Korte opplysninger om Neptun i listeform -->
+    <section class="List-container" id="Fakta">
+      <!-- List of short facts about Neptune here -->
+      <!-- Liste med korte fakta om Neptun her -->
+      <div>
+        <div><h1 id="text-1">Fakta</h1></div>
+        <img id="Neptune-bilde" src="Images/npt3.jpg" alt="Neptune" />
+        <div id="Neptune-Fakta">
+          <ul>
+            <li id="list">
+              <h3 id="textbox-1">Neptuns ringer</h3>
+              <br />
+              <p id="textbox-2">
+                Akkurat som Saturn har Neptun ringer, men de er mye tynnere og
+                mørkere, <br />
+                noe som gjør dem vanskelige å se. De består hovedsakelig av
+                støvpartikler,<br />
+                og deres eksakte sammensetning er fortsatt et mysterium.
+              </p>
+            </li>
+            <br />
+            <li id="list">
+              <h3 id="textbox-1">Neptuns iskalde måner</h3>
+              <br />
+              <p id="textbox-2">
+                Neptun har hele 14 måner, hvorav den største er Triton.<br />
+                Triton er unik fordi den går i motsatt retning av Neptuns
+                rotasjon (retrograd bane),<br />
+                noe som tyder på at den kan ha blitt fanget fra
+                Kuiper-beltet.<br />
+                På Tritons overflate er det geysirer som spruter ut nitrogen-is.
+              </p>
+            </li>
+            <br />
+            <!-- <li id="list">
+            <h3 id="textbox-1">Lange år og korte dager</h3>
+            <br />
+            <p id="textbox-2">
+              Neptun bruker 164,8 jordår på å fullføre en bane rundt Solen, noe
+              som betyr at et "år<br />
+              på Neptun varer nesten to århundrer! Men en dag på planeten er
+              veldig kort<br />
+              — kun 16 timer, noe som gjør den til en av de raskest roterende
+              planetene i solsystemet.
+            </p>
+          </li> -->
+            <br />
+            <li id="list">
+              <h3 id="textbox-1">Voyager 2-misjonen</h3>
+              <br />
+              <p id="textbox-2">
+                Den eneste sonden som har besøkt Neptun er Voyager 2 i 1989.<br />
+                Takket være denne sonden fikk vi detaljer om planetens
+                atmosfære, ringer og måner.<br />
+                Voyager 2 oppdaget også at Neptun har ringer, selv om de er
+                svært mørke og vanskelige<br />
+                å observere fra Jorden.
+              </p>
+            </li>
+            <br />
+            <!-- <li id="list">
+            <h3 id="textbox-1">Diamanter i atmosfæren?</h3>
+            <br />
+            <p id="textbox-2">
+              Noen studier antyder at det kan dannes diamanter inne i Neptun (og
+              Uranus)!<br />
+              På grunn av det ekstreme trykket kan karbonet i metanen omdannes
+              til diamanter,<br />
+              som deretter kan "regne" ned mot planetens kjerne.
+            </p>
+          </li> -->
+          </ul>
+        </div>
+
+        <br />
+
+        <!-- <div>
+          <p id="textbox-3">
+            Neptun er altså full av fascinerende mysterier og oppdagelser<br />
+            som fortsatt venter på å bli løst.<br />
+            Selv om planeten er så langt unna Jorden,<br />
+            stopper ikke forskerne å undersøke denne gåtefulle, iskalde kjempen.
+          </p>
+        </div> -->
+      </div>
+    </section>
 
     <footer>
       <hr />
-      <a href="#page_title"> <h3>Back to top</h3></a>
+      <a href="#page_title"> <h3 style="color: white">Back to top</h3></a>
       <hr />
     </footer>
   </body>
