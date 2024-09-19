@@ -24,8 +24,8 @@ html {
    - Bruker flexbox-layout for å organisere underordnede elementer vertikalt.
 */
 body {
-  height: 100%;
-  width: 100%;
+  /* height: 100%;
+  width: 100%; */
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -245,7 +245,7 @@ header {
 }
 
 #Neptune-bilde-1 {
-  margin-top: 70px;
+  margin-top: 80px;
   height: 350px;
   width: 700px;
   position: absolute;
@@ -330,6 +330,10 @@ header {
   padding-left: 750px;
 }
 
+.Video {
+  border-radius: 20px;
+  box-shadow: 4px 4px 16px var(--verydarkpurple);
+}
 /* display: flex;
   flex-direction: column;
   justify-content: space-around;
