@@ -92,6 +92,8 @@ header {
   margin-left: 1100px;
   /* padding-left: 1000px; */
   position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* Styles the navigation bar with a static position, hides overflow, sets background color, and uses flexbox layout */
@@ -131,7 +133,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: var(--black);
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 700px;
 }
 
@@ -245,7 +247,7 @@ header {
 }
 
 #Neptune-bilde-1 {
-  margin-top: 80px;
+  margin-top: 100px;
   height: 350px;
   width: 700px;
   position: absolute;
