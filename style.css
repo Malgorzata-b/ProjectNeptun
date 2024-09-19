@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Kalnia;
 }
 
 /* Smooth scrolling has been added to the entire page.
@@ -23,8 +24,8 @@ html {
    - Bruker flexbox-layout for å organisere underordnede elementer vertikalt.
 */
 body {
-  height: 100vh;
-  /* max-width: 2000px; */
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -64,33 +65,32 @@ header {
   --lightblue: /*rgba(92, 152, 249, 0.25); */ rgba(2, 20, 67, 0.75);
 }
 
-/* background-color: var(--orange); */
-#Title {
-  padding-left: 0px;
-  margin-top: 500px;
-  font-size: 70px;
-  font-weight: normal;
-  font-family: Kalnia;
-  color: var(--white);
+.Section-container {
+  display: flex;
+  background-color: var(--black);
+  height: 100vh;
 }
 
 /* Styles the text with a specific font size, family, and color, and sets its position to relative */
 /* Stiler teksten med en spesifikk skriftstørrelse, skrifttype og farge, og setter posisjonen til relativ */
 #Link {
-  font-size: 15px;
-  font-family: Kalnia;
+  font-size: 24px;
   color: var(--white);
   position: relative;
 }
-#text {
-  font-size: 34px;
-  font-family: Kalnia;
+/* background-color: var(--orange); */
+#Title {
+  padding-left: 0px;
+  margin-top: 700px;
+  font-size: 80px;
+  font-weight: normal;
   color: var(--white);
 }
 
 #Meny {
   display: flex;
-  padding-left: 900px;
+  margin-left: 1100px;
+  /* padding-left: 1000px; */
   position: absolute;
 }
 
@@ -102,6 +102,7 @@ header {
   overflow: hidden;
   /* background-color: var(--black); */
   display: flex;
+  cursor: pointer;
 }
 
 /* Styles the navigation links with block display, sets text color, alignment, padding, and font size */
@@ -110,7 +111,7 @@ header {
   display: block;
   color: var(--button-background);
   text-align: center;
-  padding: 14px 16px;
+  padding: 1rem 2rem;
   text-decoration: none;
   font-size: 17px;
 }
@@ -123,20 +124,32 @@ header {
   border-radius: 20px;
 }
 
-.Section-container {
+.Section-container-2 {
+  /* height: 100vh; */
+  max-width: 100vw;
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--black);
-  height: 100vh;
+  border: 2px solid red;
+  height: 700px;
 }
 
+#text {
+  font-size: 40px;
+  color: var(--white);
+  padding-right: 150px;
+}
 /* Styles the gallery container with flexbox layout, aligns content to the right and center, adds margins, sets height to full viewport height, and applies a black background */
 /* Stiler galleri-containeren med flexbox-layout, justerer innholdet til høyre og sentrum, legger til marger, setter høyden til full visningshøyde og bruker svart bakgrunnsfarge */
 #Bildegalleri {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   gap: 220px;
   background-color: var(--black);
+  height: 700px;
 }
 
 /* Styles the carousel container with a flexbox layout in a column direction, sets a black background, adds padding, rounded corners, and a shadow effect */
@@ -145,7 +158,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: var(--black);
-  margin: 20px 50px 20px 0px;
+  margin: 20px 100px 20px 0px;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 4px 4px 16px var(--verydarkpurple);
@@ -203,12 +216,77 @@ header {
 }
 
 #Infoside {
-  background-color: var(--lightblue);
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#Fakta {
-  background-color: var(--lightblue);
+.Infoside-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 800px;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
+
+#textbox-1 {
+  color: var(--white);
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+#text-1 {
+  margin: 20px 0px 0px 1200px;
+  font-size: 40px;
+  color: var(--white);
+  position: absolute;
+}
+
+#Neptune-bilde-1 {
+  margin-top: 70px;
+  height: 350px;
+  width: 700px;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 4px 4px 16px var(--verydarkpurple);
+}
+
+#Atmosfære {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#text-2 {
+  padding-left: 80px;
+  margin: 20px 1000px 0px 0px;
+  font-size: 40px;
+  color: var(--white);
+  position: absolute;
+}
+
+.Atmosfære-text {
+  display: flex;
+  padding-right: 800px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  padding-left: 50px;
+}
+
+#Neptune-bilde-2 {
+  margin-top: 100px;
+  margin-left: 930px;
+  height: 450px;
+  width: 800px;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 4px 4px 16px var(--verydarkpurple);
+}
+/* #Fakta {
+  display: flex;
+  background-color: var(--lightblue);
+} */
 
 .List-container {
   display: flex;
@@ -223,7 +301,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-left: 800px;
+  padding-left: 1000px;
   margin-top: 100px;
 }
 
@@ -238,79 +316,20 @@ header {
   box-shadow: 4px 4px 16px var(--verydarkpurple);
 }
 
-#textbox-1 {
-  font-family: Kalnia;
-  color: var(--white);
-}
-
 #textbox-2 {
   font-size: 14px;
-  font-family: Kalnia;
+
   color: var(--white);
 }
 
 #textbox-3 {
   font-size: 16px;
-  font-family: Kalnia;
+
   color: var(--white);
   text-align: center;
   padding-left: 750px;
 }
 
-#text-1 {
-  margin: 20px 0px 0px 1200px;
-  font-size: 34px;
-  font-family: Kalnia;
-  color: var(--white);
-  position: absolute;
-}
-
-#text-2 {
-  margin-right: 1000px;
-  margin-top: 20px;
-  padding-left: 80px;
-  font-size: 34px;
-  font-family: Kalnia;
-  color: var(--white);
-  position: absolute;
-}
-
-.Infoside-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-left: 800px;
-  margin-top: 100px;
-  margin-bottom: 200px;
-}
-
-#Neptune-bilde-1 {
-  margin-left: 50px;
-  margin-top: 70px;
-  height: 350px;
-  width: 700px;
-  position: absolute;
-  border-radius: 20px;
-  box-shadow: 4px 4px 16px var(--verydarkpurple);
-}
-
-.Atmosfære-text {
-  display: flex;
-  padding-right: 800px;
-  margin-top: 100px;
-  margin-bottom: 200px;
-  padding-left: 50px;
-}
-
-#Neptune-bilde-2 {
-  margin-top: 60px;
-  margin-left: 650px;
-  height: 350px;
-  width: 700px;
-  position: absolute;
-  border-radius: 20px;
-  box-shadow: 4px 4px 16px var(--verydarkpurple);
-}
 /* display: flex;
   flex-direction: column;
   justify-content: space-around;
